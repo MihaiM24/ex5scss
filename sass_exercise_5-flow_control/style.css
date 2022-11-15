@@ -1,0 +1,193 @@
+.bigbox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: green;
+  text-decoration: underline 1px blue;
+}
+.title_subtitle {
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 1rem;
+  justify-self: center;
+  color: green;
+}
+
+.footer {
+  margin: 20px;
+  margin-top: 0px;
+  border: 2px solid blue;
+  padding: 8px;
+  color: green;
+  font-size: 24px;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.box1 {
+  border: 2px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: 1rem;
+}
+
+.box2 {
+  border: 2px solid green;
+  padding: 8px;
+  color: red;
+  font-size: 1rem;
+}
+
+.box3 {
+  border: 2px solid green;
+  padding: 8px;
+  color: blue;
+  font-size: 1rem;
+}
+
+.box4 {
+  border: 2px solid green;
+  padding: 8px;
+  color: red;
+  font-size: 1rem;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.fs-1 {
+  border: 2px solid red;
+  height: 45px;
+  width: 45px;
+  font-size: 1rem;
+}
+
+.fs-2 {
+  border: 2px solid red;
+  height: 45px;
+  width: 45px;
+  font-size: 2rem;
+}
+
+.fs-3 {
+  border: 2px solid red;
+  height: 45px;
+  width: 45px;
+  font-size: 3rem;
+}
+
+#div-1 {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+#div-2 {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+#div-3 {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+#div-4 {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+#div-5 {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+#div-6 {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+
+#div-7 {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+#div-8 {
+  background-color: #999999;
+  color: #666666;
+}
+
+#div-9 {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+#div-10 {
+  background-color: gray;
+  color: gray;
+  color: red;
+  background-color: blue;
+}
+
+#div-11 {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+#div-12 {
+  background-color: #666666;
+  color: #999999;
+}
+
+#div-13 {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+#div-14 {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+
+#div-15 {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+#div-16 {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+#div-17 {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+#div-18 {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+#div-19 {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */

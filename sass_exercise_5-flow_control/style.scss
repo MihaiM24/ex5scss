@@ -1,0 +1,107 @@
+$bd-color: green;
+$color: green;
+$color2: blue;
+$color3: red;
+$font-size: 1rem;
+@use "sass:color";
+@mixin border-color($bd-color){
+    border: 2px solid $bd-color;
+}
+@mixin text-style($color2){
+    padding: 8px;
+    color: $color2;
+    font-size: $font-size;
+}
+@mixin footer-style($color){
+    padding: 8px;
+    color: $color;
+    font-size: 24px;
+}
+.bigbox{
+    display:flex;
+    flex-direction: column;
+    $bd-color: $color3;
+    @include border-color($bd-color);
+}
+.top{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color: $color;
+    text-decoration: underline 1px $color2;
+    &_subtitle{
+        text-decoration: none;
+        border: 1px solid $color3;
+        padding: 1rem;
+        justify-self: center;
+        color: $color;
+    }
+}
+.footer{
+    margin: 20px;
+    margin-top: 0px;
+    $bd-color: $color2;
+    @include border-color($bd-color);
+    $color: green;
+    @include footer-style($color);
+}
+.center{
+    display:flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.box1{
+    @include border-color($bd-color);
+    $color2: blue;
+    @include text-style($color2);
+}
+.box2{
+    @include border-color($bd-color);
+    $color: $color3;
+    @include text-style($color);
+}
+.box3{
+    @include border-color($bd-color);
+    @include text-style($color2);
+}
+.box4{
+    @include border-color($bd-color);
+    $color: $color3;
+    @include text-style($color);
+}
+
+@mixin little-box($color3){
+    border: 2px solid $color3;
+    height: 45px;
+    width: 45px;
+}
+.numbers{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+   
+}
+@for $index from 1 to 4 
+{
+  .fs-#{$index} 
+  {
+    @include little-box($color3);
+    font-size: $index * 1rem;
+  }
+}
+
+@for $var from 1 to 20
+{
+    #div-#{$var} {
+        background-color: color.adjust(white, $lightness: calc($var * -5%));
+        color: color.adjust(black, $lightness: calc($var * 5%));
+        @if $var == 10 {
+            color: red;
+            background-color: blue;
+        }
+    }
+    
+}
